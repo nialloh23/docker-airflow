@@ -4,7 +4,11 @@ files:
   - source: /
     destination: /home/ec2-user/docker-airflow/
 hooks:
-  AfterInstall:
-    - location: script/afterinstall.sh
+  ApplicationStop:
+    - location: script/applicationstop.sh
+      timeout: 20
+      runas: ec2-user
+  ApplicationStart:
+    - location: script/applicationstart.sh
       timeout: 300
       runas: ec2-user
