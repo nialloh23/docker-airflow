@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "Going to try and run airflow docker-compose script"
 
-cd /home/ec2-user/docker-airflow/
+set -e
 
 exec "docker-compose -f docker-compose-LocalExecutor.yml up -d"
