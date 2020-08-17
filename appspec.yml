@@ -3,3 +3,8 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/docker-airflow/
+hooks:
+  AfterInstall:
+    - location: script/afterinstall.sh
+      timeout: 300
+      runas: root
