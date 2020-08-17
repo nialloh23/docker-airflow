@@ -4,10 +4,10 @@ files:
   - source: /
     destination: /home/ec2-user/docker-airflow/
 hooks:
-  ApplicationStop:
-    - location: script/applicationstop.sh
-      timeout: 20
-      runas: ec2-user
+#  ApplicationStop:
+#    - location: script/applicationstop.sh
+#      timeout: 20
+#      runas: ec2-user
   ApplicationStart:
     - location: script/applicationstart.sh
       timeout: 300
