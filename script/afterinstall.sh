@@ -8,4 +8,4 @@ cd /home/ec2-user/docker-airflow/
 echo "now navigated into project directory"
 ls
 
-exec "docker-compose -f docker-compose-LocalExecutor.yml up -d"
+docker-compose -f docker-compose-LocalExecutor.yml up -d
